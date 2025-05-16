@@ -120,17 +120,20 @@ void sendWhatsAppMessage(String message) {
 }
 ```
 
-##Code Explanation
+## Code Explanation
 loop() {} — Why It's Empty
+
 Arduino requires a loop() function, but this project only sends one message after startup. Since we don't need to repeat anything, loop() is present but left empty.
 
 urlEncode() — Why It's Needed
+
 This function ensures your message is properly formatted for a URL:
+
 1. Special characters like spaces, punctuation, etc. are converted to percent-encoded format (e.g., " " becomes %20, "!" becomes %21).
 2. Without encoding, the CallMeBot server returns a "Bad Request" error.
 
 
-Troubleshooting Log
+## Troubleshooting Log
 
 | Problem                             | Solution                                              
 | `Error: unable to open ftdi device` | Used **Upload (→)** instead of **Debug** in Arduino IDE 
@@ -142,13 +145,13 @@ Troubleshooting Log
 | ESP32 uploads but no output         | Set **Serial Monitor baud rate to 115200**                   
 
 
-Final Result
+## Final Result
 1. ESP32 connects to Wi-Fi
 2. Sends WhatsApp message automatically
 3. Confirmed working via Serial Monitor and phone notification
 
 
-Files in This Repo
+## Files in This Repo
 File                   | Description                 
 
 | `esp32_whatsapp.ino` | Main Arduino sketch         |
@@ -156,7 +159,7 @@ File                   | Description
 
 
 
-Notes
+## Notes
 1. CallMeBot has message rate limits — avoid sending too frequently
 2. Only works with verified phone numbers and API keys
 
