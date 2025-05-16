@@ -1,4 +1,5 @@
-# Final-Project
+# Gary Hernandez
+# Final Project CSN 150
 # ESP32 WhatsApp Message Sender via CallMeBot
 
 
