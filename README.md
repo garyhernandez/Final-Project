@@ -120,7 +120,7 @@ void sendWhatsAppMessage(String message) {
 }
 ```
 
-Code Explanation
+##Code Explanation
 loop() {} — Why It's Empty
 Arduino requires a loop() function, but this project only sends one message after startup. Since we don't need to repeat anything, loop() is present but left empty.
 
