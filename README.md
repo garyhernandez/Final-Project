@@ -133,8 +133,11 @@ Troubleshooting Log
 
 | Problem                             | Solution                                              
 | `Error: unable to open ftdi device` | Used **Upload (→)** instead of **Debug** in Arduino IDE 
+
 | Message not received on WhatsApp    | Added delay after Wi-Fi connected                       
+
 | API responded with "Bad Request"    | Added `urlEncode()` function to format message               
+
 | ESP32 uploads but no output         | Set **Serial Monitor baud rate to 115200**                   
 
 
